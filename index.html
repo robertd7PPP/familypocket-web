@@ -221,14 +221,15 @@
       .nav-links { display: flex; gap: 28px; font-size: 14px; font-weight: 500; color: var(--text-sec); }
       .nav-links a:hover { color: var(--text); }
 
-      .hero { padding: 72px 32px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; text-align: left; }
+      .hero { padding: 72px 32px 80px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+      .hero > div:first-child { max-width: 640px; }
       .hero h1 { font-size: 46px; letter-spacing: -0.03em; }
       .hero p { font-size: 17px; }
       .cta-row { justify-content: flex-start; }
       .trust-line { margin: 0; max-width: none; }
-      .hero-phone { justify-content: flex-end; margin-top: 0; }
-      .phone { width: 260px; }
-      .phone-inner { height: 540px; }
+      .hero-phone { flex-direction: row; gap: 24px; align-items: flex-start; justify-content: flex-start; margin-top: 48px; }
+      .phone { width: 260px; flex-shrink: 0; }
+      .phone-inner { height: 500px; }
 
       .section-inner { padding: 72px 32px; }
       .section-h2 { font-size: 34px; margin-bottom: 40px; }
