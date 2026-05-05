@@ -648,46 +648,92 @@
       <div class="plus-text">
         <div class="plus-badge">✦ Plus feature</div>
         <h3>Their view. Their device. Your control.</h3>
-        <p>Pair a second device — an old phone, an iPad, whatever you have — with an 8-character code. Kids see their balance, their wishlist, and available jobs. They never see your real banking or financial accounts.</p>
+        <p>Pair any iPhone or iPad with an 8-character code. On their device, kids see their own transaction history — every deposit, allowance, and job. Nothing else. Not your banking, not other kids' balances.</p>
         <ul>
           <li><span class="check">✓</span> 8-character pairing code, set up in seconds</li>
           <li><span class="check">✓</span> Works on any iPhone or iPad</li>
-          <li><span class="check">✓</span> Kids see balance, wishlist, and claimable jobs</li>
+          <li><span class="check">✓</span> Kids see their balance, transactions, jobs and wishlist</li>
           <li><span class="check">✓</span> One Plus subscription covers the whole household</li>
         </ul>
       </div>
       <div class="plus-visual">
-        <div class="mini-phone">
-          <div class="mini-inner">
-            <div class="mini-notch"><div class="mini-notch-pill"></div></div>
-            <div class="mini-header" style="justify-content:center;">
-              <span>Sam's view</span>
+        <div class="phone">
+          <div class="phone-inner">
+            <div class="phone-notch"><div class="phone-notch-pill"></div></div>
+            <div class="p-status">
+              <span style="font-size:12px;font-weight:600;">9:41</span>
+              <div class="p-status-icons">
+                <svg width="14" height="10" viewBox="0 0 16 10" fill="#1A1A2E"><path d="M1 8h2v2H1zM5 6h2v4H5zM9 4h2v6H9zM13 1h2v9h-2z"/></svg>
+                <svg width="13" height="10" viewBox="0 0 14 10" fill="none" stroke="#1A1A2E" stroke-width="1.2"><path d="M0.5 3.5C2.5 1.5 5 0.5 7 0.5s4.5 1 6.5 3M2.5 5.5C4 4 5.5 3.5 7 3.5s3 0.5 4.5 2"/><circle cx="7" cy="8.5" r="1" fill="#1A1A2E" stroke="none"/></svg>
+                <svg width="22" height="11" viewBox="0 0 22 10" fill="none"><rect x="0.5" y="0.5" width="18" height="9" rx="2" stroke="#1A1A2E"/><rect x="2" y="2" width="13" height="6" rx="1" fill="#1A1A2E"/><rect x="19.5" y="3" width="1.5" height="4" rx="0.75" fill="#1A1A2E"/></svg>
+              </div>
             </div>
-            <div class="mini-body">
-              <!-- Balance card -->
-              <div style="background:white;border-radius:12px;border-left:3px solid #2ABFBF;padding:12px;box-shadow:var(--shadow);">
-                <div style="font-size:11px;color:var(--text-muted);font-weight:500;">Your balance</div>
-                <div style="font-size:28px;font-weight:700;color:var(--success);font-variant-numeric:tabular-nums;">$24.50</div>
+            <!-- Kid header: home icon | Sam | Sign out -->
+            <div class="p-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3574E8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
+              <span class="p-header-title">Sam</span>
+              <span style="font-size:13px;font-weight:600;color:var(--navy);">Sign out</span>
+            </div>
+            <div class="p-body" style="padding:12px 12px 8px;text-align:left;">
+              <!-- Balance card: no + New button, larger amount -->
+              <div style="background:white;border-radius:14px;border-left:4px solid #2ABFBF;padding:14px 14px;margin-bottom:10px;box-shadow:var(--shadow);">
+                <div style="font-size:11px;color:var(--text-sec);font-weight:500;margin-bottom:2px;">Your balance</div>
+                <div style="font-size:28px;font-weight:700;color:#22C55E;font-variant-numeric:tabular-nums;line-height:1;">$24.50</div>
               </div>
-              <!-- Wishlist item -->
-              <div style="font-size:11px;font-weight:600;color:var(--text-muted);margin-bottom:2px;">Saving for</div>
-              <div style="background:white;border-radius:12px;padding:10px 12px;box-shadow:var(--shadow);">
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-                  <div style="font-size:13px;font-weight:600;">LEGO Technic</div>
-                  <div style="font-size:12px;font-weight:700;color:var(--navy);">$24.50 / $60</div>
+              <!-- Period pills -->
+              <div style="display:flex;gap:6px;margin-bottom:10px;">
+                <div style="flex:1;background:var(--navy);border-radius:6px;padding:3px 0;text-align:center;"><span style="color:white;font-size:10px;font-weight:600;">3m</span></div>
+                <div style="flex:1;background:white;border-radius:6px;padding:3px 0;text-align:center;box-shadow:var(--shadow);"><span style="color:var(--text-sec);font-size:10px;font-weight:500;">6m</span></div>
+                <div style="flex:1;background:white;border-radius:6px;padding:3px 0;text-align:center;box-shadow:var(--shadow);"><span style="color:var(--text-sec);font-size:10px;font-weight:500;">9m</span></div>
+                <div style="flex:1;background:white;border-radius:6px;padding:3px 0;text-align:center;box-shadow:var(--shadow);"><span style="color:var(--text-sec);font-size:10px;font-weight:500;">12m</span></div>
+              </div>
+              <!-- Deposit -->
+              <div style="background:white;border-radius:10px;border-left:3px solid #22C55E;padding:12px;margin-bottom:8px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:11px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Birthday money</div>
+                  <div style="font-size:10px;color:var(--text-muted);margin-top:3px;">4 May 2026</div>
                 </div>
-                <div style="background:var(--border-lt);border-radius:999px;height:6px;overflow:hidden;">
-                  <div style="background:var(--amber);height:6px;width:41%;border-radius:999px;"></div>
+                <div style="text-align:right;margin-left:12px;flex-shrink:0;">
+                  <div style="font-size:11px;font-weight:600;color:#22C55E;font-variant-numeric:tabular-nums;">+$10.00</div>
+                  <div style="font-size:10px;color:var(--text-muted);margin-top:3px;font-variant-numeric:tabular-nums;">$24.50</div>
                 </div>
               </div>
-              <!-- Claimable job -->
-              <div style="font-size:11px;font-weight:600;color:var(--text-muted);margin-bottom:2px;">Available job</div>
-              <div class="mini-card" style="border-left-color:#3574E8;">
-                <div class="mini-card-row" style="margin-bottom:5px;">
-                  <div class="mini-label">Dishwasher</div>
-                  <div class="mini-amount">$3.00</div>
+              <!-- Allowance -->
+              <div style="background:white;border-radius:10px;border-left:3px solid #F5A623;padding:12px;margin-bottom:8px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:11px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Allowance</div>
+                  <div style="font-size:10px;color:var(--text-muted);margin-top:3px;">27 Apr 2026</div>
                 </div>
-                <button class="mini-btn-sm" style="background:var(--navy);color:white;width:100%;">Claim</button>
+                <div style="text-align:right;margin-left:12px;flex-shrink:0;">
+                  <div style="font-size:11px;font-weight:600;color:#F5A623;font-variant-numeric:tabular-nums;">+$5.00</div>
+                  <div style="font-size:10px;color:var(--text-muted);margin-top:3px;font-variant-numeric:tabular-nums;">$14.50</div>
+                </div>
+              </div>
+              <!-- Job -->
+              <div style="background:white;border-radius:10px;border-left:3px solid #3574E8;padding:12px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:11px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Job: Lawn mowing</div>
+                  <div style="font-size:10px;color:var(--text-muted);margin-top:3px;">22 Apr 2026</div>
+                </div>
+                <div style="text-align:right;margin-left:12px;flex-shrink:0;">
+                  <div style="font-size:11px;font-weight:600;color:#3574E8;font-variant-numeric:tabular-nums;">+$8.00</div>
+                  <div style="font-size:10px;color:var(--text-muted);margin-top:3px;font-variant-numeric:tabular-nums;">$9.50</div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab bar: Balance (active) | Jobs | Wishlist -->
+            <div class="p-tabbar">
+              <div class="p-tab active">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3574E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/><circle cx="17" cy="15" r="1.5" fill="#3574E8"/></svg>
+                <span class="p-tab-label" style="color:#3574E8;">Balance</span>
+              </div>
+              <div class="p-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
+                <span class="p-tab-label">Jobs</span>
+              </div>
+              <div class="p-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span class="p-tab-label">Wishlist</span>
               </div>
             </div>
           </div>
