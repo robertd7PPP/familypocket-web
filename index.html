@@ -92,6 +92,7 @@
     }
     .phone-notch { height: 26px; background: #1A1A2E; display: flex; align-items: center; justify-content: center; }
     .phone-notch-pill { width: 80px; height: 9px; background: #0d0d1a; border-radius: 999px; }
+    .phone-photo { display: block; width: 100%; border-radius: 33px; }
 
     /* ── Phone UI ── */
     .p-status { display: flex; justify-content: space-between; align-items: center; padding: 6px 14px 0; font-size: 11px; font-weight: 600; color: var(--text); }
@@ -368,138 +369,13 @@
 
   <div class="hero-phone">
     <!-- Phone 1: Family balances screen ─────────────────────────── -->
-    <!-- REPLACE WITH: <img src="screenshots/family-balances.png" /> -->
     <div class="phone">
-      <div class="phone-inner">
-        <div class="phone-notch"><div class="phone-notch-pill"></div></div>
-        <div class="p-status">
-          <span style="font-size:12px;font-weight:600;">9:41</span>
-          <div class="p-status-icons">
-            <svg width="14" height="10" viewBox="0 0 16 10" fill="#1A1A2E"><path d="M1 8h2v2H1zM5 6h2v4H5zM9 4h2v6H9zM13 1h2v9h-2z"/></svg>
-            <svg width="13" height="10" viewBox="0 0 14 10" fill="none" stroke="#1A1A2E" stroke-width="1.2"><path d="M0.5 3.5C2.5 1.5 5 0.5 7 0.5s4.5 1 6.5 3M2.5 5.5C4 4 5.5 3.5 7 3.5s3 0.5 4.5 2"/><circle cx="7" cy="8.5" r="1" fill="#1A1A2E" stroke="none"/></svg>
-            <svg width="22" height="11" viewBox="0 0 22 10" fill="none"><rect x="0.5" y="0.5" width="18" height="9" rx="2" stroke="#1A1A2E"/><rect x="2" y="2" width="13" height="6" rx="1" fill="#1A1A2E"/><rect x="19.5" y="3" width="1.5" height="4" rx="0.75" fill="#1A1A2E"/></svg>
-          </div>
-        </div>
-        <div class="p-header">
-          <span style="width:28px;"></span>
-          <span class="p-header-title">Pocket Family</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3574E8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-        </div>
-        <div class="p-body">
-          <div class="p-card" style="border-left-color:#2ABFBF;">
-            <div class="p-card-left"><div class="p-avatar" style="background:#2ABFBF;">S</div><span class="p-name">Sam</span></div>
-            <span class="p-balance" style="color:#22C55E;">$24.50</span>
-          </div>
-          <div class="p-card" style="border-left-color:#F26B5B;">
-            <div class="p-card-left"><div class="p-avatar" style="background:#F26B5B;">M</div><span class="p-name">Mia</span></div>
-            <span class="p-balance" style="color:#22C55E;">$8.20</span>
-          </div>
-          <div class="p-card" style="border-left-color:#8B5CF6;">
-            <div class="p-card-left"><div class="p-avatar" style="background:#8B5CF6;">J</div><span class="p-name">Jules</span></div>
-            <span class="p-balance" style="color:#EF4444;">−$1.50</span>
-          </div>
-          <div class="p-card" style="border-left-color:#22C55E;">
-            <div class="p-card-left"><div class="p-avatar" style="background:#22C55E;">A</div><span class="p-name">Avery</span></div>
-            <span class="p-balance" style="color:#22C55E;">$42.00</span>
-          </div>
-          <div class="p-add-btn">+ Add a kid</div>
-        </div>
-        <div class="p-tabbar">
-          <div class="p-tab active">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3574E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/><circle cx="17" cy="15" r="1.5" fill="#3574E8"/></svg>
-            <span class="p-tab-label" style="color:#3574E8;">Balances</span>
-          </div>
-          <div class="p-tab">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
-            <span class="p-tab-label">Jobs</span>
-          </div>
-          <div class="p-tab">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <span class="p-tab-label">Wishlist</span>
-          </div>
-        </div>
-      </div>
+      <img class="phone-photo" src="screenshots/family-balances.png" alt="FamilyPocket — every kid's balance in one view" />
     </div>
 
     <!-- Phone 2: Child balance / history screen ─────────────────── -->
-    <!-- REPLACE WITH: <img src="screenshots/child-balance-history.png" /> -->
     <div class="phone tx-phone">
-      <div class="phone-inner">
-        <div class="phone-notch"><div class="phone-notch-pill"></div></div>
-        <div class="p-status">
-          <span>9:41</span>
-          <div class="p-status-icons">
-            <svg width="14" height="10" viewBox="0 0 16 10" fill="#1A1A2E"><path d="M1 8h2v2H1zM5 6h2v4H5zM9 4h2v6H9zM13 1h2v9h-2z"/></svg>
-            <svg width="13" height="10" viewBox="0 0 14 10" fill="none" stroke="#1A1A2E" stroke-width="1.2"><path d="M0.5 3.5C2.5 1.5 5 0.5 7 0.5s4.5 1 6.5 3M2.5 5.5C4 4 5.5 3.5 7 3.5s3 0.5 4.5 2"/><circle cx="7" cy="8.5" r="1" fill="#1A1A2E" stroke="none"/></svg>
-            <svg width="22" height="11" viewBox="0 0 22 10" fill="none"><rect x="0.5" y="0.5" width="18" height="9" rx="2" stroke="#1A1A2E"/><rect x="2" y="2" width="13" height="6" rx="1" fill="#1A1A2E"/><rect x="19.5" y="3" width="1.5" height="4" rx="0.75" fill="#1A1A2E"/></svg>
-          </div>
-        </div>
-        <div class="p-header">
-          <span style="font-size:15px;color:var(--navy);font-weight:500;">‹ Back</span>
-          <span class="p-header-title">Pocket Family</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3574E8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-        </div>
-        <div class="p-body" style="padding:12px 12px 8px;">
-          <div style="background:#2ABFBF;border-radius:999px;padding:8px 0;text-align:center;margin-bottom:10px;">
-            <span style="color:white;font-size:14px;font-weight:700;letter-spacing:0.2px;">Sam</span>
-          </div>
-          <div style="background:white;border-radius:14px;border-left:4px solid #2ABFBF;padding:12px 14px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
-            <div>
-              <div style="font-size:11px;color:var(--text-sec);font-weight:500;margin-bottom:2px;">Balance</div>
-              <div style="font-size:24px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;line-height:1;">$24.50</div>
-            </div>
-            <div style="background:var(--navy);border-radius:8px;padding:6px 12px;">
-              <span style="color:white;font-size:12px;font-weight:600;">+ New</span>
-            </div>
-          </div>
-          <div style="display:flex;gap:6px;margin-bottom:10px;">
-            <div style="flex:1;background:var(--navy);border-radius:6px;padding:3px 0;text-align:center;"><span style="color:white;font-size:10px;font-weight:600;">3m</span></div>
-            <div style="flex:1;background:white;border-radius:6px;padding:3px 0;text-align:center;box-shadow:var(--shadow);"><span style="color:var(--text-sec);font-size:10px;font-weight:500;">6m</span></div>
-            <div style="flex:1;background:white;border-radius:6px;padding:3px 0;text-align:center;box-shadow:var(--shadow);"><span style="color:var(--text-sec);font-size:10px;font-weight:500;">9m</span></div>
-            <div style="flex:1;background:white;border-radius:6px;padding:3px 0;text-align:center;box-shadow:var(--shadow);"><span style="color:var(--text-sec);font-size:10px;font-weight:500;">12m</span></div>
-          </div>
-          <div style="background:white;border-radius:10px;border-left:3px solid #22C55E;padding:12px;margin-bottom:8px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
-            <div style="flex:1;min-width:0;">
-              <div style="font-size:11px;font-weight:500;color:var(--text);">Birthday money</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;">4 May 2026</div>
-            </div>
-            <div style="text-align:right;margin-left:12px;flex-shrink:0;">
-              <div style="font-size:11px;font-weight:600;color:#22C55E;font-variant-numeric:tabular-nums;">+$10.00</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;font-variant-numeric:tabular-nums;">$24.50</div>
-            </div>
-          </div>
-          <div style="background:white;border-radius:10px;border-left:3px solid #F5A623;padding:12px;margin-bottom:8px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
-            <div style="flex:1;min-width:0;">
-              <div style="font-size:11px;font-weight:500;color:var(--text);">Allowance</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;">27 Apr 2026</div>
-            </div>
-            <div style="text-align:right;margin-left:12px;flex-shrink:0;">
-              <div style="font-size:11px;font-weight:600;color:#F5A623;font-variant-numeric:tabular-nums;">+$5.00</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;font-variant-numeric:tabular-nums;">$14.50</div>
-            </div>
-          </div>
-          <div style="background:white;border-radius:10px;border-left:3px solid #3574E8;padding:12px;margin-bottom:8px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
-            <div style="flex:1;min-width:0;">
-              <div style="font-size:11px;font-weight:500;color:var(--text);">Job: Lawn mowing</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;">22 Apr 2026</div>
-            </div>
-            <div style="text-align:right;margin-left:12px;flex-shrink:0;">
-              <div style="font-size:11px;font-weight:600;color:#3574E8;font-variant-numeric:tabular-nums;">+$8.00</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;font-variant-numeric:tabular-nums;">$9.50</div>
-            </div>
-          </div>
-          <div style="background:white;border-radius:10px;border-left:3px solid #EF4444;padding:12px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;box-shadow:var(--shadow);">
-            <div style="flex:1;min-width:0;">
-              <div style="font-size:11px;font-weight:500;color:var(--text);">Lollies</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;">20 Apr 2026</div>
-            </div>
-            <div style="text-align:right;margin-left:12px;flex-shrink:0;">
-              <div style="font-size:11px;font-weight:600;color:#EF4444;font-variant-numeric:tabular-nums;">-$2.00</div>
-              <div style="font-size:10px;color:var(--text-muted);margin-top:3px;font-variant-numeric:tabular-nums;">$1.50</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img class="phone-photo" src="screenshots/child-balance-history.png" alt="A kid's balance with recent pocket money history" />
     </div>
   </div>
 </div>
