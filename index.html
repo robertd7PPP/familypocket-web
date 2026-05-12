@@ -78,6 +78,8 @@
     .trust-line { font-size: 13px; color: var(--text-muted); line-height: 1.5; max-width: 320px; margin: 0 auto 8px; }
     .product-clarify { font-size: 12px; color: var(--text-muted); line-height: 1.5; max-width: 360px; margin: 0 auto; font-style: italic; }
     .hero-phone { display: flex; flex-direction: column; align-items: center; gap: 24px; margin-top: 40px; }
+    .hero-phone-col { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .hero-phone-clarify { max-width: 240px; text-align: center; }
     .tx-phone { display: block; }
 
     /* ── Phone shell ── */
@@ -206,8 +208,8 @@
     .privacy .section-tag { color: rgba(255,255,255,0.55); }
     .privacy .section-h2 { color: white; margin-bottom: 14px; }
     .privacy .section-lede { color: rgba(255,255,255,0.7); margin-bottom: 32px; max-width: 580px; }
-    .privacy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
-    .privacy-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--r-md); padding: 14px; }
+    .privacy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; grid-auto-rows: 1fr; margin-bottom: 24px; }
+    .privacy-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--r-md); padding: 14px; height: 100%; }
     .privacy-card h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
     .privacy-card p { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.5; }
     .clarify-box { background: rgba(53,116,232,0.12); border: 1px solid rgba(53,116,232,0.35); border-radius: var(--r-lg); padding: 18px 20px; margin-top: 8px; }
@@ -365,7 +367,6 @@
       <a href="#how" class="btn-secondary-link">See how it works →</a>
     </div>
     <div class="trust-line">No kid email. No debit card. No real money held. No ads. Parents stay in control.</div>
-    <div class="product-clarify">FamilyPocket is a tracking tool. It does not hold money, move money or issue cards.</div>
   </div>
 
   <div class="hero-phone">
@@ -375,8 +376,11 @@
     </div>
 
     <!-- Phone 2: Child balance / history screen ─────────────────── -->
-    <div class="phone tx-phone">
-      <img class="phone-photo" src="screenshots/child-balance-history.png" alt="A kid's balance with recent pocket money history" />
+    <div class="hero-phone-col">
+      <div class="phone tx-phone">
+        <img class="phone-photo" src="screenshots/child-balance-history.png" alt="A kid's balance with recent pocket money history" />
+      </div>
+      <div class="product-clarify hero-phone-clarify">FamilyPocket is a tracking tool. It does not hold money, move money or issue cards.</div>
     </div>
   </div>
 </div>
@@ -393,7 +397,7 @@
         <p>FamilyPocket does not issue cards or connect kids to spending accounts.</p>
       </div>
       <div class="trust-strip-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11"/><path d="M9 21V13h6v8"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11"/><path d="M9 21V13h6v8"/><path d="M4 4l16 16" stroke="#EF4444"/></svg>
         <h3>No kid bank accounts</h3>
         <p>Track pocket money without opening or managing a kid bank account.</p>
       </div>
@@ -486,7 +490,8 @@
         <h3>Family Plan</h3>
         <div class="fp-sub">Bring pocket money into the household.</div>
         <ul>
-          <li><span class="check">✓</span> Kid device access</li>
+          <li><span class="check">✓</span> Multiple kid device access</li>
+          <li><span class="check">✓</span> Multiple parent device access</li>
           <li><span class="check">✓</span> Automatic weekly allowance</li>
           <li><span class="check">✓</span> Jobs kids can claim</li>
           <li><span class="check">✓</span> Parent approval before money is added</li>
@@ -607,11 +612,11 @@
       <div class="feature-text">
         <div class="feature-badge">✦ Family Plan</div>
         <h2>Let kids see their progress without giving them a login.</h2>
-        <p>With Family Plan, you can add another device using a join code. Kids can see their balance, wishlist and jobs without needing an email address or separate sign-up.</p>
+        <p>With Family Plan, you can add multiple devices using a join code. Kids can see their balance, wishlist and jobs without needing an email address or separate sign-up.</p>
         <ul>
           <li><span class="check">✓</span> Add a kid device with a join code</li>
           <li><span class="check">✓</span> Add a second parent device</li>
-          <li><span class="check">✓</span> Kids can view balances, wishlists and jobs</li>
+          <li><span class="check">✓</span> Kids can view balances, transactions, wishlists and claim jobs</li>
           <li><span class="check">✓</span> Parents stay in control</li>
         </ul>
       </div>
@@ -653,10 +658,10 @@
         <h4>Parent-controlled</h4>
         <p>Parents manage balances, jobs, allowance and access.</p>
       </div>
-    </div>
-    <div class="clarify-box">
-      <h4>A tracking tool, not a bank</h4>
-      <p>FamilyPocket records pocket money balances for your family. It does not provide banking, payment, wallet or stored-value services.</p>
+      <div class="privacy-card">
+        <h4>A tracking tool, not a bank</h4>
+        <p>FamilyPocket records pocket money balances for your family. It does not provide banking, payment, wallet or stored-value services.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -733,9 +738,8 @@
         <div class="plan-desc">For households that want shared access, automatic allowance and jobs.</div>
         <ul class="plan-features">
           <li><span class="check">✓</span> Everything in Free</li>
-          <li><span class="check">✓</span> Kid device access</li>
-          <li><span class="check">✓</span> Second parent device access</li>
-          <li><span class="check">✓</span> Join code for another device</li>
+          <li><span class="check">✓</span> Multiple kid device access</li>
+          <li><span class="check">✓</span> Multiple parent device access</li>
           <li><span class="check">✓</span> Automatic weekly allowance</li>
           <li><span class="check">✓</span> Jobs kids can claim</li>
           <li><span class="check">✓</span> Parent approval before money is added</li>
@@ -745,7 +749,7 @@
         <p class="plan-note">Cancel anytime through your Apple account.</p>
       </div>
     </div>
-    <p class="pricing-clarify">The primary parent upgrades once. Every device in the household is unlocked.</p>
+    <p class="pricing-clarify">The primary parent upgrades once. One upgrade unlocks the household.</p>
   </div>
 </section>
 
@@ -775,7 +779,7 @@
       </details>
       <details>
         <summary>Can kids use FamilyPocket on their own device?</summary>
-        <p>Yes, with Family Plan. A parent can add another device to the household using a join code.</p>
+        <p>Yes, with Family Plan. A parent can add multiple devices to the household using a join code.</p>
       </details>
       <details>
         <summary>What is included in the free version?</summary>
@@ -783,7 +787,7 @@
       </details>
       <details>
         <summary>What is included in Family Plan?</summary>
-        <p>Family Plan includes everything in Free, plus kid device access, second parent device access, automatic weekly allowance and jobs kids can claim.</p>
+        <p>Family Plan includes everything in Free, plus multiple kid device access, multiple parent device access, automatic weekly allowance and jobs kids can claim.</p>
       </details>
     </div>
   </div>
