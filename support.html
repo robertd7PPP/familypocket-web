@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support | FamilyPocket</title>
+  <meta name="description" content="Get help with FamilyPocket." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="app-icon.png" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:        #3574E8;
+      --bg:          #F5F5F7;
+      --card:        #FFFFFF;
+      --text:        #1A1A2E;
+      --text-sec:    #6B7280;
+      --text-muted:  #9CA3AF;
+      --border:      #E5E7EB;
+      --r-md: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-text-size-adjust: 100%; }
+    a { color: var(--navy); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px; height: 56px;
+      display: flex; align-items: center;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; letter-spacing: -0.01em; color: var(--text); }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 7px; }
+    .nav-brand span b { color: var(--navy); }
+
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: var(--text-muted); margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 700; margin-top: 32px; margin-bottom: 10px; }
+    p { color: var(--text-sec); margin-bottom: 14px; }
+    ul { color: var(--text-sec); margin: 0 0 14px 20px; }
+    li { margin-bottom: 6px; }
+
+    .placeholder {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--r-md);
+      padding: 20px; margin-bottom: 32px;
+      font-size: 14px; color: var(--text-sec);
+    }
+    .placeholder strong { color: var(--text); }
+
+    .contact-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--r-md);
+      padding: 20px; margin-top: 24px;
+    }
+    .contact-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .contact-card p { margin-bottom: 0; font-size: 14px; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 20px; text-align: center; font-size: 13px; color: var(--text-muted); }
+    footer a { color: var(--text-sec); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">
+    <img src="app-icon.png" alt="FamilyPocket" />
+    <span>Family<b>Pocket</b></span>
+  </a>
+</nav>
+
+<main>
+  <h1>Support</h1>
+  <p class="updated">Help and contact for FamilyPocket</p>
+
+  <div class="placeholder">
+    <strong>Placeholder.</strong> This is a stub support page so the FamilyPocket app and website have a stable link to point at. A full help centre is coming soon.
+  </div>
+
+  <h2>Getting started</h2>
+  <p>FamilyPocket is a pocket money tracker for parents. Add each child, set an allowance, log spending or jobs, and the running balance updates for the whole family. Everything is entered by parents — kids don't need a login, an email address or a card.</p>
+
+  <h2>Common questions</h2>
+  <ul>
+    <li><strong>Does FamilyPocket hold real money?</strong> No. It only records balances you enter yourself.</li>
+    <li><strong>Do my kids need their own account?</strong> No. Parents manage everything from their device.</li>
+    <li><strong>Can both parents use it?</strong> Yes — multi-parent sync is part of the app.</li>
+    <li><strong>How do I delete my data?</strong> You can clear individual entries in the app, or delete your account to remove everything. Email us if you'd like help.</li>
+  </ul>
+
+  <h2>Report a problem</h2>
+  <p>If something isn't working — a bug, a sync issue, or a balance that looks wrong — please email us with a short description and, if you can, a screenshot. We read every message.</p>
+
+  <div class="contact-card">
+    <h3>Contact us</h3>
+    <p><a href="mailto:hello@familypocket.app">hello@familypocket.app</a></p>
+  </div>
+</main>
+
+<footer>
+  <a href="/">&larr; Back to FamilyPocket</a>
+</footer>
+
+</body>
+</html>
