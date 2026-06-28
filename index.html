@@ -156,22 +156,6 @@
     .step h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.01em; }
     .step p { font-size: 14px; color: var(--text-sec); line-height: 1.55; }
 
-    /* ── Free vs Family Plan (overview) ── */
-    .freemium { background: white; }
-    .freemium .section-lede { margin-bottom: 28px; }
-    .fp-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
-    .fp-card { background: var(--bg); border: 1.5px solid var(--border); border-radius: var(--r-xl); padding: 24px; }
-    .fp-card.highlight { background: var(--text); color: white; border-color: transparent; }
-    .fp-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 4px; letter-spacing: -0.01em; }
-    .fp-card .fp-sub { font-size: 14px; color: var(--text-sec); margin-bottom: 16px; line-height: 1.5; }
-    .fp-card.highlight .fp-sub { color: rgba(255,255,255,0.7); }
-    .fp-card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .fp-card ul li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; line-height: 1.4; }
-    .fp-card .check { color: var(--success); font-weight: 700; flex-shrink: 0; }
-    .fp-card.highlight .check { color: var(--amber); }
-    .fp-card.highlight li { color: rgba(255,255,255,0.9); }
-    .fp-note { font-size: 13px; color: var(--text-muted); text-align: center; margin-top: 18px; }
-
     /* ── Feature sections ── */
     .feature-sec { background: white; }
     .feature-sec.alt { background: var(--bg); }
@@ -234,28 +218,8 @@
     .compare-row .col-other { color: var(--text-sec); }
     .compare-close { font-size: 14px; color: var(--text-sec); line-height: 1.6; margin-top: 16px; max-width: 600px; }
 
-    /* ── Pricing ── */
-    .pricing { background: white; }
-    .pricing-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    .plan { background: var(--bg); border: 1.5px solid var(--border); border-radius: var(--r-xl); padding: 24px; }
-    .plan.family-plan { background: var(--text); color: white; border-color: transparent; position: relative; }
-    .plan-tier { font-size: 13px; font-weight: 700; color: var(--text-sec); margin-bottom: 6px; }
-    .plan.family-plan .plan-tier { color: rgba(255,255,255,0.65); }
-    .plan-price { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin-bottom: 4px; }
-    .plan-trial { font-size: 13px; font-weight: 600; color: var(--amber); margin-bottom: 12px; }
-    .plan-desc { font-size: 14px; color: var(--text-sec); margin-bottom: 18px; line-height: 1.5; }
-    .plan.family-plan .plan-desc { color: rgba(255,255,255,0.65); }
-    .plan-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
-    .plan-features li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; line-height: 1.4; }
+    /* ── Shared check icon ── */
     .check { color: var(--success); font-weight: 700; flex-shrink: 0; }
-    .plan.family-plan .check { color: var(--amber); }
-    .plan.family-plan li { color: rgba(255,255,255,0.9); }
-    .plan-badge { position: absolute; top: 16px; right: 16px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; padding: 4px 10px; border-radius: var(--r-full); background: var(--amber); color: white; }
-    .btn-upgrade { display: block; width: 100%; background: var(--amber); color: white; border: none; border-radius: var(--r-md); padding: 14px; font-size: 15px; font-weight: 700; cursor: pointer; text-align: center; }
-    .btn-free { display: block; width: 100%; background: white; color: var(--text); border: 1.5px solid var(--border); border-radius: var(--r-md); padding: 13px; font-size: 15px; font-weight: 600; text-align: center; }
-    .plan-note { font-size: 12px; color: var(--text-muted); margin-top: 12px; line-height: 1.5; }
-    .plan.family-plan .plan-note { color: rgba(255,255,255,0.55); }
-    .pricing-clarify { font-size: 13px; color: var(--text-sec); text-align: center; margin-top: 18px; line-height: 1.55; max-width: 520px; margin-left: auto; margin-right: auto; }
 
     /* ── FAQ ── */
     .faq { background: var(--bg); }
@@ -289,9 +253,7 @@
     @media (min-width: 600px) {
       .trust-strip-grid { grid-template-columns: repeat(4, 1fr); }
       .steps { grid-template-columns: 1fr 1fr; }
-      .fp-grid { grid-template-columns: 1fr 1fr; }
       .privacy-grid { grid-template-columns: repeat(3, 1fr); }
-      .pricing-grid { grid-template-columns: 1fr 1fr; max-width: 720px; margin: 0 auto; }
       .footer-grid { grid-template-columns: 2fr 1fr 1.5fr; gap: 40px; }
       .section-h2 { font-size: 30px; }
       .hero h1 { font-size: 38px; }
@@ -360,7 +322,7 @@
     <div class="hero-tag">Pocket money tracker for families</div>
     <h1>Pocket money tracking <em>before kid banking.</em></h1>
     <p>FamilyPocket helps parents track kids' pocket money balances, spending, wishlists, allowance and jobs — without kid bank accounts, debit cards or kid logins.</p>
-    <div class="cta-row" id="download">
+    <div class="cta-row">
       <div class="badge-row">
         <a href="https://apps.apple.com/app/familypocket-pocket-money/id6764750428" class="btn-appstore">
           <img src="/images/app-store-badge.svg" alt="Download on the App Store" height="36">
