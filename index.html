@@ -75,6 +75,10 @@
     .cta-row { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; }
     .btn-appstore { display: inline-block; line-height: 0; }
     .btn-appstore img { height: 40px; width: auto; display: block; }
+    .btn-googleplay { display: inline-block; line-height: 0; }
+    .btn-googleplay img { height: 40px; width: auto; display: block; }
+    .badge-row { display: flex; align-items: center; gap: 10px; flex-wrap: nowrap; }
+    .hero .badge-row img { height: 36px; }
     .btn-secondary-link { font-size: 15px; font-weight: 600; color: var(--navy); }
     .trust-line { font-size: 13px; color: var(--text-muted); line-height: 1.5; max-width: 320px; margin: 0 auto 8px; }
     .product-clarify { font-size: 12px; color: var(--text-muted); line-height: 1.5; max-width: 360px; margin: 0 auto; font-style: italic; }
@@ -343,12 +347,9 @@
   </div>
   <div class="nav-links">
     <a href="#how">How it works</a>
-    <a href="#pricing">Pricing</a>
     <a href="#faq">FAQ</a>
   </div>
-  <a href="https://apps.apple.com/app/familypocket-pocket-money/id6764750428" class="btn-appstore">
-    <img src="/images/app-store-badge.svg" alt="Download on the App Store" height="40">
-  </a>
+  <a href="#download" class="nav-cta">Get the app →</a>
 </nav>
 
 <!-- ════════════════════════════════════════════════════════════ -->
@@ -359,10 +360,15 @@
     <div class="hero-tag">Pocket money tracker for families</div>
     <h1>Pocket money tracking <em>before kid banking.</em></h1>
     <p>FamilyPocket helps parents track kids' pocket money balances, spending, wishlists, allowance and jobs — without kid bank accounts, debit cards or kid logins.</p>
-    <div class="cta-row">
-      <a href="https://apps.apple.com/app/familypocket-pocket-money/id6764750428" class="btn-appstore">
-        <img src="/images/app-store-badge.svg" alt="Download on the App Store" height="40">
-      </a>
+    <div class="cta-row" id="download">
+      <div class="badge-row">
+        <a href="https://apps.apple.com/app/familypocket-pocket-money/id6764750428" class="btn-appstore">
+          <img src="/images/app-store-badge.svg" alt="Download on the App Store" height="36">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.familypocket.app" class="btn-googleplay">
+          <img src="/images/google-play-badge.png" alt="Get it on Google Play" height="36">
+        </a>
+      </div>
       <a href="#how" class="btn-secondary-link">See how it works →</a>
     </div>
     <div class="trust-line">No kid email. No debit card. No real money held. No ads. Parents stay in control.</div>
@@ -439,8 +445,8 @@
 <section class="how" id="how">
   <div class="section-inner">
     <div class="section-tag">How it works</div>
-    <h2 class="section-h2">Start with tracking. Add more when you need it.</h2>
-    <p class="section-lede" style="margin-bottom:28px;">Start free on one parent device. Upgrade to Family Plan when you want kid device access, automatic allowance and jobs.</p>
+    <h2 class="section-h2">Start with tracking. Grow into the full family routine.</h2>
+    <p class="section-lede" style="margin-bottom:28px;">Track pocket money in minutes, then bring in kid devices, automatic allowance and jobs whenever your family is ready — it's all part of the app.</p>
     <div class="steps">
       <div class="step">
         <div class="step-n">01</div>
@@ -459,45 +465,10 @@
       </div>
       <div class="step">
         <div class="step-n">04</div>
-        <h3>Unlock the family system</h3>
-        <p>With Family Plan, kids can use a joined device, allowance can be added automatically, and jobs can be claimed and approved.</p>
+        <h3>Add a kid device</h3>
+        <p>Join a kid's old phone with a code. From there they can see their balance, claim jobs and follow their allowance — no kid login needed.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════════════ -->
-<!-- 6. FREE vs FAMILY PLAN (overview)                            -->
-<!-- ════════════════════════════════════════════════════════════ -->
-<section class="freemium">
-  <div class="section-inner">
-    <div class="section-tag">Free and Family Plan</div>
-    <h2 class="section-h2">Start free. Upgrade when pocket money becomes a family routine.</h2>
-    <p class="section-lede">Free is for simple parent-led tracking. Family Plan adds the shared household features: kid devices, automatic allowance and jobs.</p>
-    <div class="fp-grid" style="margin-top:28px;">
-      <div class="fp-card">
-        <h3>Free</h3>
-        <div class="fp-sub">Track pocket money on one parent device.</div>
-        <ul>
-          <li><span class="check">✓</span> Unlimited kids</li>
-          <li><span class="check">✓</span> Add money and record spending</li>
-          <li><span class="check">✓</span> Transaction history</li>
-          <li><span class="check">✓</span> Wishlist tracking</li>
-        </ul>
-      </div>
-      <div class="fp-card highlight">
-        <h3>Family Plan</h3>
-        <div class="fp-sub">Bring pocket money into the household.</div>
-        <ul>
-          <li><span class="check">✓</span> Multiple kid device access</li>
-          <li><span class="check">✓</span> Multiple parent device access</li>
-          <li><span class="check">✓</span> Automatic weekly allowance</li>
-          <li><span class="check">✓</span> Jobs kids can claim</li>
-          <li><span class="check">✓</span> Parent approval before money is added</li>
-        </ul>
-      </div>
-    </div>
-    <p class="fp-note">One upgrade unlocks the household.</p>
   </div>
 </section>
 
@@ -558,9 +529,8 @@
   <div class="section-inner">
     <div class="feature-row">
       <div class="feature-text">
-        <div class="feature-badge">✦ Family Plan</div>
         <h2>Set allowance on repeat.</h2>
-        <p>With Family Plan, weekly allowance can be added to each kid's FamilyPocket balance automatically while allowance is active.</p>
+        <p>Weekly allowance can be added to each kid's FamilyPocket balance automatically while allowance is active.</p>
         <ul>
           <li><span class="check">✓</span> Set each kid's weekly allowance</li>
           <li><span class="check">✓</span> Skip the next allowance when needed</li>
@@ -577,41 +547,14 @@
 </section>
 
 <!-- ════════════════════════════════════════════════════════════ -->
-<!-- 10. FEATURE: JOBS (Family Plan)                              -->
+<!-- 10. FEATURE: KID DEVICE ACCESS                               -->
 <!-- ════════════════════════════════════════════════════════════ -->
-<section class="feature-sec" id="jobs">
+<section class="feature-sec" id="kid-device">
   <div class="section-inner">
     <div class="feature-row flip">
       <div class="feature-text">
-        <div class="feature-badge">✦ Family Plan</div>
-        <h2>Create jobs kids can claim.</h2>
-        <p>Family Plan lets parents create jobs, kids claim them on a joined device, and parents approve before money is added.</p>
-        <ul>
-          <li><span class="check">✓</span> Create one-off or repeating jobs</li>
-          <li><span class="check">✓</span> Choose which kids can claim each job</li>
-          <li><span class="check">✓</span> Parents approve or decline claims</li>
-          <li><span class="check">✓</span> Money is added only after approval</li>
-        </ul>
-      </div>
-      <div class="feature-visual">
-        <div class="mini-phone">
-          <img class="mini-photo" src="screenshots/parent-approval.png" alt="Parent approving job claims" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════════════ -->
-<!-- 11. FEATURE: KID DEVICE ACCESS (Family Plan)                 -->
-<!-- ════════════════════════════════════════════════════════════ -->
-<section class="feature-sec alt" id="kid-device">
-  <div class="section-inner">
-    <div class="feature-row">
-      <div class="feature-text">
-        <div class="feature-badge">✦ Family Plan</div>
         <h2>Let kids see their progress without giving them a login.</h2>
-        <p>With Family Plan, you can add multiple devices using a join code. Kids can see their balance, wishlist and jobs without needing an email address or separate sign-up.</p>
+        <p>Hand a kid an old phone — Android or iPhone — and join it to your household with a code. Kids see their balance, wishlist and jobs, and can claim jobs, without an email address or separate sign-up.</p>
         <ul>
           <li><span class="check">✓</span> Add a kid device with a join code</li>
           <li><span class="check">✓</span> Add a second parent device</li>
@@ -622,6 +565,31 @@
       <div class="feature-visual">
         <div class="mini-phone">
           <img class="mini-photo" src="screenshots/kid-pod-summary.png" alt="Kid's device view: balance, wishlist, jobs" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- 11. FEATURE: JOBS                                            -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<section class="feature-sec alt" id="jobs">
+  <div class="section-inner">
+    <div class="feature-row">
+      <div class="feature-text">
+        <h2>Create jobs kids can claim.</h2>
+        <p>Once a kid has a joined device, parents create jobs, kids claim them on their device, and parents approve before money is added.</p>
+        <ul>
+          <li><span class="check">✓</span> Create one-off or repeating jobs</li>
+          <li><span class="check">✓</span> Kids claim jobs from their own joined device</li>
+          <li><span class="check">✓</span> Parents approve or decline claims</li>
+          <li><span class="check">✓</span> Money is added only after approval</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="mini-phone">
+          <img class="mini-photo" src="screenshots/parent-approval.png" alt="Parent approving job claims" />
         </div>
       </div>
     </div>
@@ -703,54 +671,6 @@
   </div>
 </section>
 
-<!-- ════════════════════════════════════════════════════════════ -->
-<!-- 14. PRICING                                                  -->
-<!-- ════════════════════════════════════════════════════════════ -->
-<section class="pricing" id="pricing">
-  <div class="section-inner">
-    <div class="section-tag">Pricing</div>
-    <h2 class="section-h2">Start free. Upgrade when your household needs more.</h2>
-    <p class="section-lede" style="margin-bottom:32px;">Use FamilyPocket for simple parent-led tracking for free. Upgrade to Family Plan when you want kid device access, automatic allowance and jobs.</p>
-    <div class="pricing-grid">
-      <div class="plan">
-        <div class="plan-tier">Free</div>
-        <div class="plan-price">$0</div>
-        <div class="plan-desc">For simple pocket money tracking on one parent device.</div>
-        <ul class="plan-features">
-          <li><span class="check">✓</span> Unlimited kids</li>
-          <li><span class="check">✓</span> Add money and record spending</li>
-          <li><span class="check">✓</span> Full transaction history</li>
-          <li><span class="check">✓</span> Wishlist tracking</li>
-          <li><span class="check">✓</span> Parent-only access</li>
-          <li><span class="check">✓</span> No ads</li>
-        </ul>
-        <a href="https://apps.apple.com/app/familypocket-pocket-money/id6764750428" class="btn-free">Start free</a>
-        <p class="plan-note">No debit card or kid bank account required.</p>
-      </div>
-
-      <div class="plan family-plan">
-        <span class="plan-badge">FAMILY PLAN</span>
-        <div class="plan-tier">Family Plan</div>
-        <div class="plan-trial" style="margin-bottom:6px;">1 month free trial</div>
-        <div class="plan-price" style="font-size:24px;margin-bottom:4px;">Then $17.99 <span style="font-size:13px;color:rgba(255,255,255,0.55);font-weight:500;">NZD/year</span></div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-bottom:14px;">Regional App Store pricing may vary.</div>
-        <div class="plan-desc">For households that want shared access, automatic allowance and jobs.</div>
-        <ul class="plan-features">
-          <li><span class="check">✓</span> Everything in Free</li>
-          <li><span class="check">✓</span> Multiple kid device access</li>
-          <li><span class="check">✓</span> Multiple parent device access</li>
-          <li><span class="check">✓</span> Automatic weekly allowance</li>
-          <li><span class="check">✓</span> Jobs kids can claim</li>
-          <li><span class="check">✓</span> Parent approval before money is added</li>
-          <li><span class="check">✓</span> One upgrade unlocks the household</li>
-        </ul>
-        <a href="https://apps.apple.com/app/familypocket-pocket-money/id6764750428" class="btn-upgrade">Start free trial</a>
-        <p class="plan-note">Cancel anytime through your Apple account.</p>
-      </div>
-    </div>
-    <p class="pricing-clarify">The primary parent upgrades once. One upgrade unlocks the household.</p>
-  </div>
-</section>
 
 <!-- ════════════════════════════════════════════════════════════ -->
 <!-- 15. FAQ                                                      -->
@@ -778,15 +698,15 @@
       </details>
       <details>
         <summary>Can kids use FamilyPocket on their own device?</summary>
-        <p>Yes, with Family Plan. A parent can add multiple devices to the household using a join code.</p>
+        <p>Yes. Hand a kid any spare phone — Android or iPhone — and join it to your household with a code. No kid email or sign-up is needed.</p>
       </details>
       <details>
-        <summary>What is included in the free version?</summary>
-        <p>The free version includes parent-only tracking on one device, unlimited kids, add money, record spending, transaction history and wishlist tracking.</p>
+        <summary>How do jobs work?</summary>
+        <p>Parents create jobs in the app. Once a kid has joined their own device with a code, they can claim a job when it's done — and money is only added after a parent approves. Jobs can be one-off or repeating, and you choose which kids can claim each one.</p>
       </details>
       <details>
-        <summary>What is included in Family Plan?</summary>
-        <p>Family Plan includes everything in Free, plus multiple kid device access, multiple parent device access, automatic weekly allowance and jobs kids can claim.</p>
+        <summary>Is FamilyPocket free?</summary>
+        <p>Yes — FamilyPocket is free to use, including kid devices, allowance and jobs. An optional Family Plan keeps everything running without limits for busy households.</p>
       </details>
     </div>
   </div>
@@ -804,7 +724,10 @@
       <a href="https://apps.apple.com/app/familypocket-pocket-money/id6764750428" class="btn-appstore">
         <img src="/images/app-store-badge.svg" alt="Download on the App Store" height="40">
       </a>
-      <a href="#pricing" class="btn-secondary-link">See pricing →</a>
+      <a href="https://play.google.com/store/apps/details?id=com.familypocket.app" class="btn-googleplay">
+        <img src="/images/google-play-badge.png" alt="Get it on Google Play" height="40">
+      </a>
+      <a href="#how" class="btn-secondary-link">See how it works →</a>
     </div>
     <p class="product-clarify" style="margin: 16px auto 0;">FamilyPocket is a tracking tool. It does not hold money, move money or issue cards.</p>
   </div>
@@ -823,7 +746,6 @@
       <h5>Links</h5>
       <ul>
         <li><a href="#how">How it works</a></li>
-        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="/support.html">Support</a></li>
         <li><a href="/privacy.html">Privacy Policy</a></li>

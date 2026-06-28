@@ -75,11 +75,11 @@
   <h2>What information does the Application obtain and how is it used?</h2>
   <p>To provide the service, the Application collects and stores the following:</p>
   <ul>
-    <li><strong>Account information</strong> — your email address (via Sign in with Apple) and a nickname or display label that you choose during setup (e.g. Dad, Mum, or your name if you prefer). If you sign in with Apple and choose to hide your email, we only receive Apple's private-relay address.</li>
+    <li><strong>Account information</strong> — your email address and any name your sign-in provider shares with us (via Sign in with Apple or Google Sign-In), plus a nickname or display label that you choose during setup (e.g. Dad, Mum, or your name if you prefer). If you sign in with Apple and choose to hide your email, we only receive Apple's private-relay address.</li>
     <li><strong>Family information you enter</strong> — a family name, the names or nicknames of other parents you invite, and the names or nicknames of your children. Children do not sign up or enter their own information; parents enter all child data.</li>
     <li><strong>Pocket-money activity you enter</strong> — children's balances, allowance amounts and schedules, transactions (type, amount, optional note, timestamp), jobs (name, value, schedule), job claims, and wishlist items (name, price, optional URL).</li>
     <li><strong>Subscription status</strong> — whether your household has an active paid subscription.</li>
-    <li><strong>An Apple refresh token</strong> — stored only so we can revoke your Sign in with Apple credential when you delete your account.</li>
+    <li><strong>An Apple or Google refresh token</strong> — stored only so we can revoke your Sign in with Apple or Google Sign-In credential when you delete your account.</li>
     <li><strong>On your device only</strong> — your sign-in session and a small cache of which child profiles to show on a shared family device.</li>
   </ul>
   <p>This information is used solely to operate the Application — to authenticate you, sync your family's pocket-money data across devices, and manage your subscription. We do not use it for advertising, analytics, or marketing.</p>
@@ -91,13 +91,14 @@
   <p>Yes — the Application relies on the following service providers to operate. No other third parties receive your information.</p>
   <ul>
     <li><strong>Apple</strong> — Sign in with Apple. Used for authentication. Apple shares your email (real or private-relay) with us. We do not request or store your name from Apple — you choose a display nickname inside the app. Privacy policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+    <li><strong>Google</strong> — Google Sign-In (authentication) and Google Play billing. Google shares your email and name with us when you sign in; you can set a different display nickname inside the app. Privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
     <li><strong>Supabase</strong> (Supabase Inc.). Hosts the database (Sydney region) and authentication. All account, family, and pocket-money data listed above is stored here. Privacy policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
-    <li><strong>RevenueCat</strong> (RevenueCat, Inc.). Manages the subscription. Receives a random household identifier and the App Store transaction. No name or email is sent. Privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
+    <li><strong>RevenueCat</strong> (RevenueCat, Inc.). Manages the subscription. Receives a random household identifier and the App Store or Google Play transaction. No name or email is sent. Privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
   </ul>
-  <p>Payment is processed by Apple via the App Store; we never see your card details. The Application does not include any analytics, advertising, or tracking SDKs, and does not collect advertising identifiers, contacts, photos, microphone, camera, or any device sensor data.</p>
+  <p>Payment is processed by Apple via the App Store, or by Google via Google Play; we never see your card details. The Application does not include any analytics, advertising, or tracking SDKs, and does not collect advertising identifiers, contacts, photos, microphone, camera, or any device sensor data.</p>
 
   <h2>What are my opt-out rights?</h2>
-  <p>You can delete your account from within the Application (Settings → Delete account), which removes your household and all associated parent profiles, children, transactions, jobs, and wishlist items, and revokes the stored Apple refresh token. You can also uninstall the Application at any time using the standard uninstall process on your device.</p>
+  <p>You can delete your account from within the Application (Settings → Delete account), which removes your household and all associated parent profiles, children, transactions, jobs, and wishlist items, and revokes the stored Apple or Google refresh token. You can also uninstall the Application at any time using the standard uninstall process on your device.</p>
 
   <h2>Children</h2>
   <p>The Application is designed for families and allows parents to record information about their children — specifically a name or nickname and pocket-money activity. Children do not create accounts, are not contacted by us, and do not provide their own personal information through the Application. We do not knowingly collect contact information, location, or any other personally identifiable information directly from children.</p>
