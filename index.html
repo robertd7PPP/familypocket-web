@@ -17,6 +17,85 @@
   <meta name="twitter:description" content="Track kids' pocket money balances, spending, wishlists, allowance and jobs. No kid bank accounts, debit cards or kid logins." />
   <meta name="twitter:image" content="https://www.familypocket.co.nz/app-icon.png" />
   <link rel="icon" href="app-icon-small.png" />
+  <link rel="canonical" href="https://www.familypocket.co.nz/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.familypocket.co.nz/#organization",
+        "name": "FamilyPocket",
+        "url": "https://www.familypocket.co.nz/",
+        "logo": "https://www.familypocket.co.nz/app-icon.png",
+        "sameAs": [
+          "https://apps.apple.com/app/familypocket-pocket-money/id6764750428",
+          "https://play.google.com/store/apps/details?id=com.familypocket.app"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.familypocket.co.nz/#website",
+        "url": "https://www.familypocket.co.nz/",
+        "name": "FamilyPocket",
+        "publisher": { "@id": "https://www.familypocket.co.nz/#organization" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://www.familypocket.co.nz/#app",
+        "name": "FamilyPocket: Pocket Money",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "FinanceApplication",
+        "description": "Track kids' pocket money balances, spending, wishlists, allowance and jobs. No kid bank accounts, debit cards, kid logins, real money held or ads.",
+        "url": "https://www.familypocket.co.nz/",
+        "publisher": { "@id": "https://www.familypocket.co.nz/#organization" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "NZD" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.familypocket.co.nz/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is FamilyPocket a bank account?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. FamilyPocket is a pocket money tracker. It does not hold money, issue cards or move funds." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does FamilyPocket hold real money?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. FamilyPocket does not hold, store, move or manage real money. It records pocket money balances agreed within your family." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my kid need an account?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Kids do not need separate accounts, emails or sign-ups. Parents can add kids using names, nicknames or labels." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there advertising?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. FamilyPocket is ad-free. It does not show ads to parents or kids." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can kids use FamilyPocket on their own device?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Hand a kid any spare phone — Android or iPhone — and join it to your household with a code. No kid email or sign-up is needed." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do jobs work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Parents create jobs in the app. Once a kid has joined their own device with a code, they can claim a job when it's done — and money is only added after a parent approves. Jobs can be one-off or repeating, and you choose which kids can claim each one." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is FamilyPocket free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — FamilyPocket is free to use, including kid devices, allowance and jobs. An optional Family Plan keeps everything running without limits for busy households." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
