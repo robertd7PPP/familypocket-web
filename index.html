@@ -16,7 +16,7 @@
   <meta name="twitter:title" content="FamilyPocket - Pocket money tracking before kid banking" />
   <meta name="twitter:description" content="Track kids' pocket money balances, spending, wishlists, allowance and jobs. No kid bank accounts, debit cards or kid logins." />
   <meta name="twitter:image" content="https://www.familypocket.co.nz/app-icon.png" />
-  <link rel="icon" href="app-icon-small.png" />
+  <link rel="icon" href="/app-icon-small.png" />
   <link rel="canonical" href="https://www.familypocket.co.nz/" />
 
   <script type="application/ld+json">
@@ -408,6 +408,7 @@
       .footer-cta h2 { font-size: 36px; }
     }
   </style>
+  <link rel="stylesheet" href="/comparison-links.css" />
 </head>
 <body>
 
@@ -416,10 +417,11 @@
 <!-- ════════════════════════════════════════════════════════════ -->
 <nav>
   <div class="nav-brand">
-    <img src="app-icon-small.png" alt="FamilyPocket icon" />
+    <img src="/app-icon-small.png" alt="FamilyPocket icon" />
     <span>Family<b>Pocket</b></span>
   </div>
   <div class="nav-links">
+      <a href="/articles/compare-pocket-money-apps/">Compare apps</a>
     <a href="#how">How it works</a>
     <a href="#faq">FAQ</a>
     <a href="/articles/">Articles</a>
@@ -456,13 +458,13 @@
   <div class="hero-phone">
     <!-- Phone 1: Family balances screen ─────────────────────────── -->
     <div class="phone">
-      <img class="phone-photo" src="screenshots/family-balances.png" alt="FamilyPocket - every kid's balance in one view" />
+      <img class="phone-photo" src="/screenshots/family-balances.png" alt="FamilyPocket - every kid's balance in one view" />
     </div>
 
     <!-- Phone 2: Child balance / history screen ─────────────────── -->
     <div class="hero-phone-col">
       <div class="phone tx-phone">
-        <img class="phone-photo" src="screenshots/child-balance-history.png" alt="A kid's balance with recent pocket money history" />
+        <img class="phone-photo" src="/screenshots/child-balance-history.png" alt="A kid's balance with recent pocket money history" />
       </div>
       <div class="product-clarify hero-phone-clarify">FamilyPocket is a tracking tool. It does not hold money, move money or issue cards.</div>
     </div>
@@ -574,7 +576,7 @@
       </div>
       <div class="feature-visual">
         <div class="mini-phone">
-          <img class="mini-photo" src="screenshots/family-balances.png" alt="Every kid's pocket money balance in one view" />
+          <img class="mini-photo" src="/screenshots/family-balances.png" alt="Every kid's pocket money balance in one view" />
         </div>
       </div>
     </div>
@@ -599,7 +601,7 @@
       </div>
       <div class="feature-visual">
         <div class="mini-phone">
-          <img class="mini-photo" src="screenshots/wishlist.png" alt="A kid's wishlist with savings progress" />
+          <img class="mini-photo" src="/screenshots/wishlist.png" alt="A kid's wishlist with savings progress" />
         </div>
       </div>
     </div>
@@ -624,7 +626,7 @@
       </div>
       <div class="feature-visual">
         <div class="mini-phone">
-          <img class="mini-photo" src="screenshots/edit-kid-allowance.png" alt="Setting a kid's weekly allowance" />
+          <img class="mini-photo" src="/screenshots/edit-kid-allowance.png" alt="Setting a kid's weekly allowance" />
         </div>
       </div>
     </div>
@@ -650,7 +652,7 @@
       </div>
       <div class="feature-visual">
         <div class="mini-phone">
-          <img class="mini-photo" src="screenshots/kid-pod-summary.png" alt="Kid's device view: balance, wishlist, jobs" />
+          <img class="mini-photo" src="/screenshots/kid-pod-summary.png" alt="Kid's device view: balance, wishlist, jobs" />
         </div>
       </div>
     </div>
@@ -676,7 +678,7 @@
       </div>
       <div class="feature-visual">
         <div class="mini-phone">
-          <img class="mini-photo" src="screenshots/parent-approval.png" alt="Parent approving job claims" />
+          <img class="mini-photo" src="/screenshots/parent-approval.png" alt="Parent approving job claims" />
         </div>
       </div>
     </div>
@@ -723,38 +725,20 @@
 <!-- ════════════════════════════════════════════════════════════ -->
 <!-- 13. COMPARISON                                               -->
 <!-- ════════════════════════════════════════════════════════════ -->
-<section class="compare">
-  <div class="section-inner">
-    <div class="section-tag">Why FamilyPocket</div>
-    <h2 class="section-h2">A simpler step before kid banking.</h2>
-    <p class="section-lede">Some families are ready for kid debit cards and bank accounts. Others just want a simple way to track pocket money at home. FamilyPocket is built for that earlier stage.</p>
-    <div class="compare-table" style="margin-top:24px;">
-      <div class="compare-row head">
-        <div>FamilyPocket</div>
-        <div>Kid banking apps</div>
-      </div>
-      <div class="compare-row">
-        <div class="col-fp">Pocket money tracker</div>
-        <div class="col-other">Often a banking or card product</div>
-      </div>
-      <div class="compare-row">
-        <div class="col-fp">No debit card</div>
-        <div class="col-other">Usually card-based</div>
-      </div>
-      <div class="compare-row">
-        <div class="col-fp">No kid bank account</div>
-        <div class="col-other">Often linked to real spending</div>
-      </div>
-      <div class="compare-row">
-        <div class="col-fp">No kid login required</div>
-        <div class="col-other">Often requires separate kid setup</div>
-      </div>
-      <div class="compare-row">
-        <div class="col-fp">No real money held by the app</div>
-        <div class="col-other">May hold, move or connect to real money</div>
-      </div>
+<section class="compare" id="compare" aria-labelledby="compare-heading">
+  <div class="section-inner compare-intro-grid">
+    <div>
+      <div class="section-tag">Why FamilyPocket</div>
+      <h2 class="section-h2" id="compare-heading">Compare pocket money apps</h2>
+      <p class="section-lede">Some apps track money parents keep. Others give kids a spending card. Compare FamilyPocket with Greenlight, GoHenry, Spriggy, SquareOne and other kids’ pocket money apps—including free limits, jobs, family access and payment models.</p>
+      <a class="comparison-action" href="/articles/compare-pocket-money-apps/#matrix">Compare pocket money apps →</a>
     </div>
-    <p class="compare-close">FamilyPocket is not trying to replace a bank. It is designed for the stage before your family needs one.</p>
+    <aside class="founder-teaser" aria-labelledby="founder-heading">
+      <div class="section-tag">From the founder</div>
+      <h3 id="founder-heading">Why FamilyPocket exists</h3>
+      <p>We started with a whiteboard and wanted shared pocket-money tracking without opening bank accounts for the kids. Here’s why I built FamilyPocket, and the choices behind its design, features and price.</p>
+      <a href="/articles/why-familypocket-exists/">Read why we built FamilyPocket →</a>
+    </aside>
   </div>
 </section>
 
@@ -882,6 +866,7 @@
       <ul>
         <li><a href="#how">How it works</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="/articles/compare-pocket-money-apps/">Compare apps</a></li>
         <li><a href="/articles/">Articles</a></li>
         <li><a href="/support.html">Support</a></li>
         <li><a href="/privacy.html">Privacy Policy</a></li>

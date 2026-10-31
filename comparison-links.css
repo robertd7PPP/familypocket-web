@@ -1,0 +1,14 @@
+
+.compare-intro-grid { display:grid; gap:28px; align-items:start; }
+.compare-intro-grid .section-h2 { margin-bottom:18px; }
+.comparison-action { display:inline-flex; align-items:center; justify-content:center; margin-top:24px; padding:13px 20px; border-radius:10px; background:var(--navy); color:#fff; font-size:15px; line-height:1.5; font-weight:650; }
+.comparison-action:hover { background:var(--navy-dark,#1b4faa); }
+.founder-teaser { padding:26px; border:1px solid var(--border); border-radius:18px; background:#fff; }
+.founder-teaser .section-tag { margin-bottom:14px; }
+.founder-teaser h3 { font-size:23px; line-height:1.25; letter-spacing:-.02em; margin:0 0 14px; }
+.founder-teaser p { font-size:15px; line-height:1.7; color:var(--text-sec); margin-bottom:18px; }
+.founder-teaser a { color:var(--navy); font-weight:650; font-size:14px; }
+.comparison-action:focus-visible,.founder-teaser a:focus-visible { outline:3px solid var(--navy); outline-offset:4px; }
+#compare { scroll-margin-top:85px; }
+@media (min-width:900px) { .compare-intro-grid { grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:54px; } }
+@media (min-width:700px) and (max-width:850px) { .site-nav .nav-links { gap:14px; font-size:13px; } .site-nav { padding:0 20px; } .site-nav .nav-brand { font-size:18px; } .site-nav .nav-cta { font-size:13px; padding:9px 12px; } }

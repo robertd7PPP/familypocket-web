@@ -1,0 +1,6 @@
+.article-body > .comparison-intro { padding:18px 22px; background:var(--navy-light); border:1px solid #d5e2f7; border-radius:12px; font-size:15px; }
+.store-badges { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:18px; }
+.article-app-note .store-badges a { margin:0; line-height:0; border-radius:6px; }
+.store-badges img { display:block; height:40px; width:auto; }
+.store-badges a:focus-visible { outline:3px solid var(--navy); outline-offset:4px; }
+@media (max-width:600px) { .article-shell { padding-top:32px; } .article-header h1 { font-size:36px; } .article-dek { font-size:16px; } .article-body > .comparison-intro { padding:16px 18px; } }
